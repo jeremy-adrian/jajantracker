@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JajanTracker | Atur Pengeluaranmu, Kendalikan Keuanganmu!</title>
+    <meta name="description"
+          content="JajanTracker memudahkanmu mencatat anggaran, melacak pengeluaran, dan mengatur keuangan secara efisien. Unduh sekarang di Play Store dan App Store!">
+    <style>
+        body {
+            font-family: "Trebuchet MS", Tahoma, sans-serif;
+            background-color: #4caf50;
+            color: #333;
+            margin: 0;
+        }
+
+        .highlight {
+            background-color: #ffc107;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 48px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 22px;
+            line-height: 28px;
+            margin-top: 48px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 24px;
+            margin-top: 16px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            padding: 2px 22px;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            width: 245px;
+        }
+
+        .button img {
+            height: 26px;
+            justify-content: left;
+            margin-right: 8px;
+        }
+
+        .button p {
+            flex: 1;
+            font-size: 16px;
+            line-height: 12px;
+            text-align: center;
+        }
+
+        .button:hover {
+            text-decoration: underline;
+        }
+
+        .features {
+            background-color: #333;
+            margin: 0 auto;
+            padding: 72px 0;
+        }
+
+        .features h1 {
+            margin-bottom: 72px;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: center;
+            gap: 72px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            width: 364px;
+            background-color: #f5f5f5;
+            border-radius: 18px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+        }
+
+        .feature h1 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            color: #333;
+            font-size: 18px;
+            text-align: start;
+        }
+
+        .feature p {
+            font-size: 14px;
+            line-height: 21px;
+            margin: 0 22px 32px;
+        }
+
+        .carousel {
+            width: 320px;
+            overflow: hidden;
+            border-radius: 6px 6px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        .carousel-inner {
+            display: flex;
+        }
+
+        .carousel-convenience {
+            box-sizing: border-box;
+        }
+
+        .carousel-best-experience {
+            box-sizing: border-box;
+        }
+
+        .carousel-item img {
+            width: 320px;
+            display: flex;
+        }
+
+        .testimonials {
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 64px 0;
+        }
+
+        .testimonials h1 {
+            margin-bottom: 64px;
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .testimonials-container {
+            display: flex;
+            justify-content: center;
+            gap: 64px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial {
+            width: 364px;
+        }
+
+        .testimonial p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+        }
+
+        .testimonial-audience {
+            margin-top: 8px;
+        }
+
+        .testimonial-audience p {
+            font-size: 14px;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+            margin-top: 32px;
+        }
+    </style>
+</head>
+<body>
+<div class="hero">
+    <div class="center"><img src="hero-logo.png" alt=""></div>
+    <h1>Atur Pengeluaranmu, Kendalikan Keuanganmu!</h1>
+    <p>Dengan <span class="highlight">&nbsp;JajanTracker,&nbsp;</span> mencatat pengeluaran dan memantau anggaran jadi
+        mudah dan cepat.</p>
+
+    <div class="button-container">
+        <a class="button" href="https://play.google.com/store/apps/details?id=com.hendrickprasdito.jajantracker"><img
+                src="cta-playstore.png">
+            <p>Unduh di Android PlayStore</p></a>
+        <a class="button" href="https://apps.apple.com/app/idYOUR_APP_ID"><img
+                src="cta-appstore.png">
+            <p>Unduh di Apple AppStore</p></a>
+    </div>
+</div>
+<div class="features">
+    <h1>Kenapa Pilih Kami?</h1>
+    <div class="features-container">
+        <div class="feature">
+            <h1><span class="highlight">&nbsp;Praktis & Ringkas&nbsp;</span></h1>
+            <p>Apikasi kami praktis dan ringkas. Kondisi keuangan terkini bisa langsung diakses secara real-time di
+                beranda.</p>
+            <div class="carousel">
+                <div class="carousel-inner" id="convenience">
+                    <div class="carousel-convenience"><img src="convenience-1.png"></div>
+                    <div class="carousel-convenience"><img src="convenience-2.png"></div>
+                    <div class="carousel-convenience"><img src="convenience-3.png"></div>
+                    <div class="carousel-convenience"><img src="convenience-1.png"></div>
+                </div>
+            </div>
+            <script>
+                let conveniencesIndex = 0;
+
+                function nextSlide() {
+                    const convenience = document.getElementById('convenience');
+                    const conveniences = document.querySelectorAll('.carousel-convenience');
+                    conveniencesIndex++;
+                    convenience.style.transition = 'transform 0.5s ease-in-out';
+                    convenience.style.transform = `translateX(-${conveniencesIndex * 100}%)`;
+
+                    setTimeout(() => {
+                        if (conveniencesIndex === conveniences.length - 1) {
+                            conveniencesIndex = 0;
+                            convenience.style.transition = 'none';
+                            convenience.style.transform = `translateX(-${conveniencesIndex * 100}%)`;
+                        }
+                    }, 500)
+                }
+
+                setInterval(nextSlide, 5000);
+            </script>
+        </div>
+        <div class="feature">
+            <h1><span class="highlight">&nbsp;Pengalaman Terbaik&nbsp;</span></h1>
+            <p>Kami memberikan pengalaman terbaik. Kegiatan mencatat pengeluaran dan merencanakan anggaran jadi
+                mudah.</p>
+            <div class="carousel">
+                <div class="carousel-inner" id="best-experience">
+                    <div class="carousel-best-experience"><img src="best-experience-1.png"></div>
+                    <div class="carousel-best-experience"><img src="best-experience-2.png"></div>
+                    <div class="carousel-best-experience"><img src="best-experience-3.png"></div>
+                    <div class="carousel-best-experience"><img src="best-experience-1.png"></div>
+                </div>
+            </div>
+            <script>
+                let bestExperiencesIndex = 0;
+
+                function nextSlide() {
+                    const bestExperience = document.getElementById('best-experience');
+                    const bestExperiences = document.querySelectorAll('.carousel-best-experience');
+                    bestExperiencesIndex++;
+                    bestExperience.style.transition = 'transform 0.5s ease-in-out';
+                    bestExperience.style.transform = `translateX(-${bestExperiencesIndex * 100}%)`;
+
+                    setTimeout(() => {
+                        if (bestExperiencesIndex === bestExperiences.length - 1) {
+                            bestExperiencesIndex = 0;
+                            bestExperience.style.transition = 'none';
+                            bestExperience.style.transform = `translateX(-${bestExperiencesIndex * 100}%)`;
+                        }
+                    }, 500)
+                }
+
+                setInterval(nextSlide, 5000);
+            </script>
+        </div>
+        <div class="feature">
+            <h1><span class="highlight">&nbsp;Raih Tujuan Finansial&nbsp;</span></h1>
+            <p>Kami bisa membantumu meraih tujuan finansial. Gunakan arsip keuangan untuk memperbaiki pola
+                belanjamu.</p>
+        </div>
+    </div>
+</div>
+<div class="testimonials">
+    <h1>Apa Kata Mereka?</h1>
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <p>"JajanTracker sangat membantu saya mengelola uang belanja. Saya bisa membagi anggaran bulanan keluarga
+                sesuai kebutuhan dan memantaunya kapan saja."</p>
+            <div class="testimonial-audience">
+                <p>- Rina, Ibu Rumah Tangga</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>"Aplikasinya praktis, mudah digunakan. Saya jadi lebih cermat mengelola uang bulanan."</p>
+            <div class="testimonial-audience">
+                <p>- Robert, Mahasiswa</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>"Sebelumnya saya gatau uang habis kemana aja. Sekarang enggak lagi!"</p>
+            <div class="testimonial-audience">
+                <p>- Sandra, Karyawati</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="button-container">
+    <a class="button" href="https://play.google.com/store/apps/details?id=com.hendrickprasdito.jajantracker"><img
+            src="cta-playstore.png">
+        <p>Unduh di Android PlayStore</p></a>
+    <a class="button" href="https://apps.apple.com/app/idYOUR_APP_ID"><img
+            src="cta-appstore.png">
+        <p>Unduh di Apple AppStore</p></a>
+</div>
+<div class="footer">
+    <p>&copy; 2025 <span class="highlight">&nbsp;JajanTracker.&nbsp;</span> Semua Hak Dilindungi.</p>
+</div>
+</body>
+</html>
