@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unduh JajanTracker</title>
+    <style>
+        body {
+            font-family: "Trebuchet MS", Tahoma, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #4CAF50;
+            font-weight: bold;
+            margin-top: 30px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                //window.location.href = 'https://apps.apple.com/app/idYOUR_APP_ID';
+            }
+            else if (/android/i.test(userAgent)) {
+                //window.location.href = 'https://play.google.com/store/apps/details?id=your.package.name';
+            }
+            else {
+                //window.location.href = 'https://spendingcount.com';
+            }
+        });
+    </script>
+</head>
+<body>
+    <h2>Mengalihkan ke JajanTracker ..</h2>
+    <p>Atau kunjungi <a href="https://jajantracker.hendrickprasdito.com">situs</a> kami.</p>
+</body>
+</html>
