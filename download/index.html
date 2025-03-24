@@ -11,39 +11,60 @@
     <style>
         body {
             font-family: "Trebuchet MS", Tahoma, sans-serif;
-            line-height: 1.6;
+            background-color: #4caf50;
             color: #333;
             margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
         }
-        h2 {
-            color: #4CAF50;
-            font-weight: bold;
-            margin-top: 30px;
+
+        .highlight {
+            background-color: #ffc107;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 48px;
             text-align: center;
         }
-        p {
-            text-align: center;
+
+        .hero h1 {
+            font-size: 22px;
+            line-height: 28px;
+            margin-top: 48px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 24px;
+            margin-top: 16px;
         }
     </style>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        document.addEventListener("DOMContentLoaded", async function () {
+            let userAgent = navigator.userAgent;
+
+            // Use userAgentData if available (modern browsers)
+            if (navigator.userAgentData) {
+                userAgent = navigator.userAgentData.platform;
+            }
+
+            // Redirect logic
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                //window.location.href = 'https://apps.apple.com/app/idYOUR_APP_ID';
-            }
-            else if (/android/i.test(userAgent)) {
-                //window.location.href = 'https://play.google.com/store/apps/details?id=your.package.name';
-            }
-            else {
-                //window.location.href = 'https://spendingcount.com';
+                window.location.href = 'https://apps.apple.com/us/app/jajantracker/id6742694352';
+            } else if (/android/i.test(userAgent)) {
+                // window.location.href = 'https://play.google.com/store/apps/details?id=your.package.name';
+            } else {
+                window.location.href = 'https://jajantracker.hendrickprasdito.com';
             }
         });
     </script>
 </head>
 <body>
-    <h2>Mengalihkan ke JajanTracker ..</h2>
+<div class="hero">
+    <h1>Mengalihkan ke <span class="highlight">&nbsp;JajanTracker&nbsp;</span> ..</h1>
     <p>Atau kunjungi <a href="https://jajantracker.hendrickprasdito.com">situs</a> kami.</p>
+</div>
 </body>
 </html>
