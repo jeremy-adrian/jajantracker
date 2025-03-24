@@ -10,7 +10,6 @@
     <title>JajanTracker | Atur Pengeluaranmu, Kendalikan Keuanganmu!</title>
     <meta name="description"
           content="JajanTracker memudahkanmu mencatat pengeluaran dan memantau anggaran jadi mudah dan cepat. Unduh sekarang di Android PlayStore dan Apple AppStore!">
-    <meta http-equiv="refresh" content="300">
     <style>
         body {
             font-family: "Trebuchet MS", Tahoma, sans-serif;
@@ -239,16 +238,16 @@
                     convenience.style.transition = 'transform 0.5s ease-in-out';
                     convenience.style.transform = `translateX(-${conveniencesIndex * 100}%)`;
 
-                    setTimeout(() => {
-                        if (conveniencesIndex === conveniences.length - 1) {
+                    if (conveniencesIndex === conveniences.length - 1) {
+                        setTimeout(() => {
                             conveniencesIndex = 0;
                             convenience.style.transition = 'none';
                             convenience.style.transform = `translateX(-${conveniencesIndex * 100}%)`;
-                        }
-                    }, 500)
+                        }, 500)
+                    }
                 }
 
-                setInterval(nextSlide, 5000);
+                setInterval(nextSlide, (Math.floor(Math.random() * 3) + 5) * 1000); // 5, 6, or 7 seconds
             </script>
         </div>
         <div class="feature">
@@ -273,16 +272,16 @@
                     bestExperience.style.transition = 'transform 0.5s ease-in-out';
                     bestExperience.style.transform = `translateX(-${bestExperiencesIndex * 100}%)`;
 
-                    setTimeout(() => {
-                        if (bestExperiencesIndex === bestExperiences.length - 1) {
+                    if (bestExperiencesIndex === bestExperiences.length - 1) {
+                        setTimeout(() => {
                             bestExperiencesIndex = 0;
                             bestExperience.style.transition = 'none';
                             bestExperience.style.transform = `translateX(-${bestExperiencesIndex * 100}%)`;
-                        }
-                    }, 500)
+                        }, 500)
+                    }
                 }
 
-                setInterval(nextSlide, 5000);
+                setInterval(nextSlide, (Math.floor(Math.random() * 3) + 5) * 1000); // 5, 6, or 7 seconds
             </script>
         </div>
         <div class="feature">
