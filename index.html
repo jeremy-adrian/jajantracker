@@ -27,28 +27,27 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin: 0 48px;
             text-align: center;
         }
 
         .hero h1 {
+            margin: 48px 48px 0;
             font-size: 22px;
             line-height: 28px;
-            margin-top: 48px;
         }
 
-        .hero p {
+        .hero-description {
+            margin: 16px 48px 0;
             font-size: 17px;
             line-height: 24px;
-            margin-top: 16px;
         }
 
         .button-container {
+            margin: 32px 0;
             display: flex;
             justify-content: center;
             gap: 12px;
             flex-wrap: wrap;
-            margin-top: 32px;
         }
 
         .button {
@@ -152,13 +151,14 @@
         }
 
         .testimonials h1 {
-            margin-bottom: 64px;
+            margin: 0 24px 64px;
             color: #333;
             font-size: 18px;
             text-align: center;
         }
 
         .testimonials-container {
+            margin: 0 24px;
             display: flex;
             justify-content: center;
             gap: 64px;
@@ -185,10 +185,10 @@
         }
 
         .footer {
-            margin-top: 32px;
+            margin: 32px 24px 0;
         }
 
-        .footer p {
+        .footer-description {
             font-size: 14px;
             color: #333;
             text-align: center;
@@ -199,16 +199,16 @@
 <div class="hero">
     <div><img src="hero-logo.png" alt=""></div>
     <h1>Atur Pengeluaranmu, Kendalikan Keuanganmu!</h1>
-    <p>Dengan <span class="highlight">&nbsp;JajanTracker,&nbsp;</span> mencatat pengeluaran dan memantau anggaran jadi
-        mudah dan cepat.</p>
+    <p class="hero-description">Dengan <span class="highlight">&nbsp;JajanTracker,&nbsp;</span> mencatat pengeluaran dan
+        memantau anggaran jadi mudah dan cepat.</p>
 
     <div class="button-container">
         <a class="button" href="index.html">
-            <img src="cta-playstore.png">
+            <img src="cta-playstore.png" alt="">
             <p>Unduh di Android PlayStore</p>
         </a>
         <a class="button" href="https://apps.apple.com/us/app/jajantracker/id6742694352" target="_blank">
-            <img src="cta-appstore.png">
+            <img src="cta-appstore.png" alt="">
             <p>Unduh di Apple AppStore</p>
         </a>
     </div>
@@ -222,10 +222,10 @@
                 beranda.</p>
             <div class="carousel">
                 <div class="carousel-inner" id="convenience">
-                    <div class="carousel-convenience"><img src="convenience-1.png"></div>
-                    <div class="carousel-convenience"><img src="convenience-2.png"></div>
-                    <div class="carousel-convenience"><img src="convenience-3.png"></div>
-                    <div class="carousel-convenience"><img src="convenience-1.png"></div>
+                    <div class="carousel-convenience"><img src="convenience-1.png" alt=""></div>
+                    <div class="carousel-convenience"><img src="convenience-2.png" alt=""></div>
+                    <div class="carousel-convenience"><img src="convenience-3.png" alt=""></div>
+                    <div class="carousel-convenience"><img src="convenience-1.png" alt=""></div>
                 </div>
             </div>
             <script>
@@ -256,10 +256,10 @@
                 mudah.</p>
             <div class="carousel">
                 <div class="carousel-inner" id="best-experience">
-                    <div class="carousel-best-experience"><img src="best-experience-1.png"></div>
-                    <div class="carousel-best-experience"><img src="best-experience-2.png"></div>
-                    <div class="carousel-best-experience"><img src="best-experience-3.png"></div>
-                    <div class="carousel-best-experience"><img src="best-experience-1.png"></div>
+                    <div class="carousel-best-experience"><img src="best-experience-1.png" alt=""></div>
+                    <div class="carousel-best-experience"><img src="best-experience-2.png" alt=""></div>
+                    <div class="carousel-best-experience"><img src="best-experience-3.png" alt=""></div>
+                    <div class="carousel-best-experience"><img src="best-experience-1.png" alt=""></div>
                 </div>
             </div>
             <script>
@@ -315,18 +315,19 @@
         </div>
     </div>
 </div>
-<div class="button-container">
-    <a class="button" href="index.html">
-        <img src="cta-playstore.png">
-        <p>Unduh di Android PlayStore</p>
-    </a>
-    <a class="button" href="https://apps.apple.com/us/app/jajantracker/id6742694352" target="_blank">
-        <img src="cta-appstore.png">
-        <p>Unduh di Apple AppStore</p>
-    </a>
-</div>
 <div class="footer">
-    <p>&copy; 2025 <span class="highlight">&nbsp;JajanTracker.&nbsp;</span> Semua Hak Dilindungi.</p>
+    <div class="button-container">
+        <a class="button" href="index.html">
+            <img src="cta-playstore.png" alt="">
+            <p>Unduh di Android PlayStore</p>
+        </a>
+        <a class="button" href="https://apps.apple.com/us/app/jajantracker/id6742694352" target="_blank">
+            <img src="cta-appstore.png" alt="">
+            <p>Unduh di Apple AppStore</p>
+        </a>
+    </div>
+    <p class="footer-description">&copy; 2025 <span class="highlight">&nbsp;JajanTracker.&nbsp;</span> Semua Hak
+        Dilindungi.</p>
 </div>
 </body>
 </html>
