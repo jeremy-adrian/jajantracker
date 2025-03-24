@@ -10,6 +10,7 @@
     <title>JajanTracker | Atur Pengeluaranmu, Kendalikan Keuanganmu!</title>
     <meta name="description"
           content="JajanTracker memudahkanmu mencatat pengeluaran dan memantau anggaran jadi mudah dan cepat. Unduh sekarang di Android PlayStore dan Apple AppStore!">
+    <meta http-equiv="refresh" content="300">
     <style>
         body {
             font-family: "Trebuchet MS", Tahoma, sans-serif;
@@ -229,11 +230,11 @@
                 </div>
             </div>
             <script>
+                const convenience = document.getElementById('convenience');
+                const conveniences = document.querySelectorAll('.carousel-convenience');
                 let conveniencesIndex = 0;
 
                 function nextSlide() {
-                    const convenience = document.getElementById('convenience');
-                    const conveniences = document.querySelectorAll('.carousel-convenience');
                     conveniencesIndex++;
                     convenience.style.transition = 'transform 0.5s ease-in-out';
                     convenience.style.transform = `translateX(-${conveniencesIndex * 100}%)`;
@@ -263,11 +264,11 @@
                 </div>
             </div>
             <script>
+                const bestExperience = document.getElementById('best-experience');
+                const bestExperiences = document.querySelectorAll('.carousel-best-experience');
                 let bestExperiencesIndex = 0;
 
                 function nextSlide() {
-                    const bestExperience = document.getElementById('best-experience');
-                    const bestExperiences = document.querySelectorAll('.carousel-best-experience');
                     bestExperiencesIndex++;
                     bestExperience.style.transition = 'transform 0.5s ease-in-out';
                     bestExperience.style.transform = `translateX(-${bestExperiencesIndex * 100}%)`;
