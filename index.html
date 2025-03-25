@@ -193,6 +193,45 @@
             color: #333;
             text-align: center;
         }
+
+        #popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            text-align: center;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1EBE57;
+        }
     </style>
 </head>
 <body>
@@ -203,7 +242,7 @@
         memantau anggaran jadi mudah dan cepat.</p>
 
     <div class="button-container">
-        <a class="button" href="index.html">
+        <a class="button" href="#" onclick="showPopup()">
             <img src="cta-playstore.png" alt="">
             <p>Unduh di Android PlayStore</p>
         </a>
@@ -317,7 +356,7 @@
 </div>
 <div class="footer">
     <div class="button-container">
-        <a class="button" href="index.html">
+        <a class="button" href="#" onclick="showPopup()">
             <img src="cta-playstore.png" alt="">
             <p>Unduh di Android PlayStore</p>
         </a>
@@ -329,5 +368,25 @@
     <p class="footer-description">&copy; 2025 <span class="highlight">&nbsp;JajanTracker.&nbsp;</span> Semua Hak
         Dilindungi.</p>
 </div>
+<div id="popup" style="display: none;" onclick="closePopup(event)">
+    <div class="popup-content" onclick="event.stopPropagation();">
+        <p>JajanTracker untuk Android sedang dalam tahap uji coba tertutup.</p>
+        <p>Ingin mencoba lebih awal? Chat kami di WhatsApp untuk mendapatkan akses eksklusif!</p>
+        <button class="whatsapp-button" onclick="contactViaWhatsApp()">Chat di WhatsApp</button>
+    </div>
+</div>
+<script>
+    function showPopup() {
+        document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup(event) {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    function contactViaWhatsApp() {
+        window.open('https://wa.me/6282299971092?text=Halo.%20Saya%20ingin%20mencoba%20JajanTracker%20di%20Android!', '_blank');
+    }
+</script>
 </body>
 </html>
