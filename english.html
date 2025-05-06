@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JajanTracker | Manage Your Expenses, Take Control of Your Finances!</title>
+    <meta name="description"
+          content="With JajanTracker, recording your expenses and tracking your budget has never been easier. Download now on Android PlayStore and Apple AppStore!">
+    <style>
+        @font-face {
+            font-family: "Poppins-Regular";
+            src: url(https://jajantracker.com/font/Poppins-Regular.ttf) format("truetype");
+        }
+
+        body {
+            font-family: "Poppins-Regular", "Trebuchet MS", Tahoma, sans-serif;
+            background-color: #4caf50;
+            color: #333;
+            margin: 0;
+        }
+
+        .highlight {
+            background-color: #ffc107;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 48px 48px 0;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        .hero-description {
+            margin: 16px 48px 0;
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        .button-container {
+            margin: 32px 0;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            padding: 2px 22px;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            width: 245px;
+        }
+
+        .button img {
+            height: 26px;
+            justify-content: left;
+            margin-right: 8px;
+        }
+
+        .button p {
+            flex: 1;
+            font-size: 14px;
+            line-height: 12px;
+            text-align: center;
+        }
+
+        .button:hover {
+            text-decoration: underline;
+        }
+
+        .features {
+            background-color: #333;
+            margin: 0 auto;
+            padding: 72px 0;
+        }
+
+        .features h1 {
+            margin-bottom: 72px;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: center;
+            gap: 72px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            width: 364px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+        }
+
+        .feature h1 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            color: #333;
+            font-size: 16px;
+            text-align: start;
+        }
+
+        .feature p {
+            font-size: 12px;
+            line-height: 21px;
+            margin: 0 22px 32px;
+        }
+
+        .carousel {
+            width: 320px;
+            overflow: hidden;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        .carousel-inner {
+            display: flex;
+        }
+
+        .carousel-convenience, .carousel-best-experience, .carousel-financial-purpose {
+            box-sizing: border-box;
+        }
+
+        .carousel-item img {
+            width: 320px;
+            display: flex;
+        }
+
+        .testimonials {
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 64px 0;
+        }
+
+        .testimonials h1 {
+            margin: 0 24px 64px;
+            color: #333;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .testimonials-container {
+            margin: 0 24px;
+            display: flex;
+            justify-content: center;
+            gap: 64px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial {
+            width: 364px;
+        }
+
+        .testimonial p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: justify;
+        }
+
+        .testimonial-audience {
+            margin-top: 8px;
+        }
+
+        .testimonial-audience p {
+            font-size: 12px;
+        }
+
+        .footer {
+            margin: 32px 24px 0;
+        }
+
+        .footer-description {
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+        }
+
+        #popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            text-align: center;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: white;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1EBE57;
+        }
+    </style>
+</head>
+<body>
+<div class="hero">
+    <div><img src="hero-logo.png" alt="JajanTracker Logo"></div>
+    <h1>Manage Your Expenses, Take Control of Your Finances!</h1>
+    <p class="hero-description">With <span class="highlight">&nbsp;JajanTracker,&nbsp;</span> recording your expenses
+        and
+        tracking your budget has never been easier.</p>
+
+    <div class="button-container">
+        <a class="button"
+           href="https://play.google.com/store/apps/details?id=com.hendrickprasdito.jajantracker.flutter_app_jajantracker"
+           target="_blank">
+            <img src="cta-playstore.png" alt="PlayStore">
+            <p>Download on Android PlayStore</p>
+        </a>
+        <a class="button" href="https://apps.apple.com/us/app/jajantracker/id6742694352" target="_blank">
+            <img src="cta-appstore.png" alt="AppStore">
+            <p>Download on Apple AppStore</p>
+        </a>
+    </div>
+</div>
+
+<div class="features">
+    <h1>Why Choose Us?</h1>
+    <div class="features-container">
+        <div class="feature">
+            <h1><span class="highlight">&nbsp;Convenient & Simple&nbsp;</span></h1>
+            <p>Your current financial condition is immediately visible on the dashboard. Managing your budget and
+                recording your expenses is made super easy.</p>
+            <div class="carousel">
+                <div class="carousel-inner" id="convenience">
+                    <div class="carousel-convenience"><img src="convenience-1.png" alt="Convenience 1"></div>
+                    <div class="carousel-convenience"><img src="convenience-2.png" alt="Convenience 2"></div>
+                    <div class="carousel-convenience"><img src="convenience-3.png" alt="Convenience 3"></div>
+                    <div class="carousel-convenience"><img src="convenience-1.png" alt="Convenience 1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature">
+            <h1><span class="highlight">&nbsp;Best Experience&nbsp;</span></h1>
+            <p>Financial information is presented clearly and attractively. The features promote positive financial
+                habits.</p>
+            <div class="carousel">
+                <div class="carousel-inner" id="best-experience">
+                    <div class="carousel-best-experience"><img src="best-experience-1.png" alt="Best Experience 1">
+                    </div>
+                    <div class="carousel-best-experience"><img src="best-experience-2.png" alt="Best Experience 2">
+                    </div>
+                    <div class="carousel-best-experience"><img src="best-experience-3.png" alt="Best Experience 3">
+                    </div>
+                    <div class="carousel-best-experience"><img src="best-experience-1.png" alt="Best Experience 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature">
+            <h1><span class="highlight">&nbsp;Achieve Financial Goals&nbsp;</span></h1>
+            <p>Use your financial history to understand spending patterns and make smarter decisions to reach your
+                financial goals.</p>
+            <div class="carousel">
+                <div class="carousel-inner" id="financial-purpose">
+                    <div class="carousel-financial-purpose"><img src="financial-purpose-1.png"
+                                                                 alt="Financial Purpose 1"></div>
+                    <div class="carousel-financial-purpose"><img src="financial-purpose-2.png"
+                                                                 alt="Financial Purpose 2"></div>
+                    <div class="carousel-financial-purpose"><img src="financial-purpose-1.png"
+                                                                 alt="Financial Purpose 1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="testimonials">
+    <h1>What Do They Say?</h1>
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <p>"JajanTracker has been super helpful in tracking my spending habits, making budgeting fun, and helping me
+                make better financial decisions!"</p>
+            <div class="testimonial-audience">
+                <p>- Siti, Frequent User</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>"I never realized how much I was spending on unnecessary things until I started using JajanTracker. Now,
+                I'm more aware of my financial habits."</p>
+            <div class="testimonial-audience">
+                <p>- Eka, First-Time User</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p class="footer-description">We are here to help you manage your expenses and achieve your financial goals with
+        ease. <span class="highlight">&nbsp;JajanTracker&nbsp;</span> is the smart way to budget. Get started today!</p>
+</div>
+</body>
+</html>
