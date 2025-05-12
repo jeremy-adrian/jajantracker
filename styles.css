@@ -144,19 +144,32 @@ a:hover {
     text-align: center;
 }
 
-.copyright {
-    margin-top: 52px;
+.link-copyright {
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.link-copyright-item {
+    display: flex;
 }
 
 .contacts {
-    margin-top: 52px;
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
 }
 
-.contacts p {
-    text-align: center;
+.contact {
+    display: flex;
 }
 
-.contacts img {
-    margin: 16px 16px 32px;
+.contact img {
     width: 72px;
 }
