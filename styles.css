@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(/font/Poppins-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: "Poppins-Regular", "Trebuchet MS", Tahoma, sans-serif;
+    background-color: #4caf50;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: #ffc107;
+}
+
+.screen-height {
+    height: 100vh;
+    padding: 8px 14px;
+}
+
+.language {
+}
+
+.language p {
+    text-align: end;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-chicken {
+    margin-bottom: 48px;
+}
+
+.hero h1 {
+    margin-bottom: 16px;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.hero-description {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.download-button {
+    display: flex;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 6px;
+    width: 315px;
+}
+
+.download-button img {
+    height: 26px;
+    justify-content: left;
+}
+
+.download p {
+    margin-top: 2px;
+    flex: 1;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.features {
+    background-color: #333;
+    padding: 72px 0;
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 364px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+}
+
+.feature h1 {
+    margin: 12px 0;
+    color: #333;
+    font-size: 16px;
+    text-align: start;
+}
+
+.feature p {
+    line-height: 21px;
+    margin: 0 22px 22px;
+}
+
+.carousel {
+    width: 320px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item img {
+    width: 320px;
+    display: flex;
+}
+
+.villain {
+    padding: 72px 14px 0;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 52px;
+}
+
+.contacts {
+    margin-top: 52px;
+}
+
+.contacts p {
+    text-align: center;
+}
+
+.contacts img {
+    margin: 16px 16px 32px;
+    width: 72px;
+}
