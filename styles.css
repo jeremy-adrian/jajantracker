@@ -5,22 +5,23 @@
 
 body {
     font-family: "Poppins-Regular", "Trebuchet MS", Tahoma, sans-serif;
-    background-color: #4caf50;
+    background-color: #68B2A0;
     margin: 0;
 }
 
 h1 {
     margin: 0;
+    color: #2C6975;
 }
 
 p {
     margin: 0;
-    color: #333;
+    color: #2C6975;
     font-size: 14px;
 }
 
 a {
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -29,7 +30,7 @@ a:hover {
 }
 
 .highlight {
-    background-color: #ffc107;
+    background-color: #EEB462;
 }
 
 .screen-height {
@@ -78,8 +79,8 @@ a:hover {
 .download-button {
     display: flex;
     padding: 8px 16px;
-    color: #fff;
-    background-color: #333;
+    color: #FFF;
+    background-color: #2C6975;
     border-radius: 6px;
     width: 315px;
 }
@@ -92,13 +93,13 @@ a:hover {
 .download p {
     margin-top: 2px;
     flex: 1;
-    color: #fff;
+    color: #FFF;
     font-size: 14px;
     text-align: center;
 }
 
 .features {
-    background-color: #333;
+    background-color: #2C6975;
     padding: 72px 0;
     display: flex;
     justify-content: center;
@@ -108,13 +109,13 @@ a:hover {
 
 .feature {
     width: 364px;
-    background-color: #f5f5f5;
+    background-color: #E0ECDE;
     border-radius: 6px;
 }
 
 .feature h1 {
     margin: 12px 0;
-    color: #333;
+    color: #2C6975;
     font-size: 16px;
     text-align: start;
 }
