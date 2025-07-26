@@ -174,3 +174,40 @@ a:hover {
 .contact img {
     width: 72px;
 }
+
+.scroll-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 16px;
+    max-width: 90vw; /* Keeps it centered and responsive */
+    scroll-snap-type: x mandatory;
+}
+
+.video-item {
+    flex: 0 0 auto;
+    width: 320px;
+    height: 180px;
+    scroll-snap-align: start;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Hide scrollbar (optional) */
+.video-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+.video-scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
