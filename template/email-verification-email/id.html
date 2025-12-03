@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kode OTP untuk Verifikasi Email Kamu – JajanTracker &#128274;</title>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212 !important;
+                color: #e5e5e5 !important;
+            }
+
+            .container {
+                background-color: #1e1e1e !important;
+                color: #e5e5e5 !important;
+            }
+
+            p {
+                color: #e5e5e5 !important;
+            }
+
+            .help {
+                border-top-color: #2c6975 !important;
+            }
+
+            .footer {
+                border-top-color: #2c6975 !important;
+            }
+        }
+    </style>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; margin: 0; padding: 20px; background-color: #e0ecde; color: #2c6975; font-size: 16px; line-height: 1.7;">
+<p style="font-size: 14px; color: #68b2a0; text-align: center; margin-bottom: 20px;">Kamu menerima email ini karena baru
+    saja meminta OTP untuk memverifikasi alamat email di aplikasi <strong>JajanTracker</strong>.</p>
+<table role="presentation" style="width: 100%; border-spacing: 0;">
+    <tr style="padding: 0;">
+        <td style="padding: 0;">
+            <div class="container"
+                 style="max-width: 600px; margin: auto; background-color: #fff; border-radius: 8px; padding: 24px; border-top: 6px solid #68b2a0; box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);">
+                <h1 style="font-size: 26px; color: #68b2a0;">Hai, ${person.fullName} &#128075;</h1>
+                <p style="margin: 16px 0; color: #2c6975;">Kami menerima permintaanmu untuk memverifikasi alamat email
+                    kamu:<br>&#128231; <a style="color: #68b2a0;"
+                                          href="mailto:${email.address}">${email.address}</a><br>Verifikasi ini penting
+                    untuk menjaga keamanan akun JajanTracker-mu.</p>
+                <h3 style="font-size: 22px; color: #68b2a0;">Kode OTP kamu:</h3>
+                <h1 style="font-size: 26px; color: #68b2a0; letter-spacing: 4px;">${verification.token}</h1>
+                <p style="margin: 16px 0; color: #2c6975;">Masukkan kode ini di aplikasi JajanTracker melalui tab
+                    <strong>Pengaturan</strong> untuk menyelesaikan proses verifikasi. Kode ini berlaku sampai <strong>${getProvider().getVerification().getDateDisplay(verification.expired!!,
+                        person.id!!, person.timeZone!!, "cae24f15f17b438fb7b7bf4c16384043") }</strong>, atau sekitar
+                    <strong>1 jam dari sekarang</strong>.</p>
+                <div style="text-align: center; margin: 32px 0;">
+                    <img style="width: 100%; border-radius: 6px;"
+                         src="https://i.ibb.co.com/Cp0p3mSN/qhiqpv7cqbiy8ut9.jpg" alt="Sushing">
+                </div>
+                <h3 style="font-size: 22px; color: #68b2a0;">Penting:</h3>
+                <ul style="padding-left: 30px;">
+                    <li style="margin-bottom: 12px;">Jangan pernah membagikan kode ini kepada siapapun, termasuk pihak
+                        yang mengaku dari JajanTracker.
+                    </li>
+                    <li style="margin-bottom: 12px;">Jika kamu tidak meminta kode ini, abaikan email ini.</li>
+                </ul>
+                <div class="help" style="margin-top: 48px; border-top: 1px solid #cde0c9; padding-top: 24px;">
+                    <h3 style="font-size: 22px; color: #68b2a0;">Butuh Bantuan?</h3>
+                    <p style="margin: 16px 0; color: #2c6975;">Kalau ada pertanyaan atau kendala, kami siap
+                        membantu:<br>&#128231; <a style="color: #68b2a0;"
+                                                  href="mailto:jeremy.adrian@hendrickprasdito.com">jeremy.adrian@hendrickprasdito.com</a><br>Atau
+                        kamu bisa langsung balas email ini.</p>
+                </div>
+                <div class="footer"
+                     style="margin-top: 48px; font-size: 15px; text-align: center; border-top: 1px solid #cde0c9; padding-top: 24px;">
+                    <p style="margin: 16px 0; color: #2c6975;">Terima kasih telah mempercayakan perjalanan finansialmu
+                        pada JajanTracker &#128640;</p>
+                    <p style="margin: 16px 0; color: #2c6975;"><strong>Salam hemat,</strong><br>Tim JajanTracker</p>
+                    <p style="margin: 16px 0; color: #2c6975;"><em>Atur Jajan, Wujudkan Mimpi</em></p>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<p style="font-size: 14px; color: #68b2a0; text-align: center; margin-top: 20px;">Ini adalah pesan transaksional yang
+    dikirim berdasarkan aktivitas kamu di dalam aplikasi. Email ini bukan email pemasaran atau promosi.</p>
+</body>
+</html>
