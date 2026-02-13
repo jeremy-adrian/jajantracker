@@ -57,6 +57,11 @@ a:hover {
     margin-bottom: 48px;
 }
 
+.hero-chicken img {
+    width: 152px;
+    height: 152px;
+}
+
 .hero h1 {
     margin-bottom: 16px;
     font-size: 21px;
@@ -128,7 +133,7 @@ a:hover {
 .carousel {
     width: 320px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0 auto 8px auto;
 }
 
 .carousel-inner {
@@ -160,6 +165,7 @@ a:hover {
 
 .contacts {
     margin-top: 21px;
+    margin-bottom: 7px;
     display: flex;
     justify-content: center;
     align-items: center;

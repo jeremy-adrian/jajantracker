@@ -1,7 +1,7 @@
 const carousels = [
     {id: 'carousel-one', className: 'carousel-one'},
     {id: 'carousel-two', className: 'carousel-two'},
-    {id: 'carousel-three', className: 'carousel-three'}
+    // {id: 'carousel-three', className: 'carousel-three'}
 ];
 
 function setupCarousel({id, className}) {
