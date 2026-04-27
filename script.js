@@ -1,3 +1,17 @@
+const langDropdown = document.querySelector('.lang-dropdown');
+const langBtn = document.querySelector('.lang-btn');
+
+if (langDropdown && langBtn) {
+    langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('open');
+    });
+
+    document.addEventListener('click', () => {
+        langDropdown.classList.remove('open');
+    });
+}
+
 const carousels = [
     {id: 'carousel-one', className: 'carousel-one'},
     {id: 'carousel-two', className: 'carousel-two'},
